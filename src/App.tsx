@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import {useSelector } from 'react-redux';
+import {useAppDispatch} from './redux/hooks';
 import './App.css';
 import type {} from '@mui/x-data-grid/themeAugmentation';
 import Header from './components/Header';
@@ -19,7 +20,7 @@ interface RootState {
 
 const App: React.FC = () => {
     const isDarkMode = useSelector((state: RootState) => state.darkMode);
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
     const { rows, status, error } = useSelector((state: RootState) => state.data);
 
     const [modalOpen, setModalOpen] = useState(false);
