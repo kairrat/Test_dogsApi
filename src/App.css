@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+.name-header {
+  background-color: #fc5110;
+}
+
+
+
+.life-span-header {
+  background-color: #0b3d0b;
+}
+
+
+
+.temperament-header {
+  background-color: #da84b1;
+}
+
+
+
+.image-header {
+  background-color: #6a93d9;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: hidden;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+  padding: 20px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+.close {
+  position: absolute;
+  cursor: pointer;
+  color: red;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+
+}
